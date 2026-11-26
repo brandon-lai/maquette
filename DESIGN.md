@@ -206,5 +206,14 @@ drawing SVG letterboxed its coordinates inside a wider clickable sheet. Edge
 clicks collapsed into collinear corners. The sheet now matches the viewBox's
 aspect ratio, and out-of-grid clicks give explicit feedback rather than clamping.
 A regression draws and confirms edge and center outlines at 1440 and 390px.
-All eight before-confirmation/confirmation captures were inspected. The final
-review verdict is pending.
+All eight before-confirmation/confirmation captures were inspected. The same
+independent reviewer rechecked all four real-pointer paths and explicit margin
+feedback, then returned **ship**. The first review judged the product designed
+for this PRD and faithful to the "one room, two scales" signature; no other
+material issue remained. No marked marketing slots await real material.
+
+The live GitHub-backed Vercel release also passed all 15 browser tests. Its real
+miniature rendered at 1440/768/390px with zero measured header/main spill.
+Production plan, walk-in, edit/capture dialogs, errors, empty states, sharing,
+downloaded PNG and WebGL fallback were captured and inspected; the capture
+reported zero page errors. Public metadata uses the actual assigned domain.

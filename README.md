@@ -183,6 +183,14 @@ export, OCR/PDF, view-only sharing and WebGL-fallback checks. See
 the independent review. Physical accuracy and user-adoption benchmarks remain
 unverified.
 
+The same 15 browser tests passed against the live production domain. Its
+1440/768/390px miniature renders and major states were inspected, with no measured
+overflow or captured page errors. Public pages, icons, OCR/PDF workers and
+metadata served successfully. Unconfigured cloud reads/writes returned 503,
+private-network product import returned 422 and cross-origin import returned 403.
+Vercel's Git deployment was matched to the pushed commit, not a local CLI upload.
+The independent review's final verdict is **ship** after the drawing fix.
+
 ## Privacy
 
 No accounts, telemetry, payment data or raw IP database columns. Browser storage
