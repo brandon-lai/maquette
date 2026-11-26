@@ -1,5 +1,8 @@
 # Maquette
 
+[Live planner](https://maquette-delta-ruddy.vercel.app) ·
+[GitHub repository](https://github.com/brandon-lai/maquette)
+
 A website that turns a room into a true-to-scale 3D miniature, takes in furniture
 you own or want to buy, and suggests where everything should go.
 
@@ -10,6 +13,7 @@ Maquette answers: **will my stuff fit, and where should it go?**
 ## Run
 
 ```sh
+nvm use 22 # or your preferred Node version manager
 npm ci
 npm run dev
 ```
@@ -165,6 +169,8 @@ enabling cloud storage for real users.
 Production must come from the connected GitHub `main` branch. Never deploy a
 working tree with `vercel deploy`. `.gitignore` and `.vercelignore` both exclude
 local environment files. All dependencies are pinned in the lockfile.
+Node 22 is the tested runtime. `NEXT_PUBLIC_APP_URL` is set to the assigned
+production domain before the deployment-trigger push; `DATABASE_URL` is absent.
 
 ## Verification
 

@@ -30,7 +30,8 @@ const mono = localFont({
 });
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_APP_URL ?? "https://maquette.vercel.app",
+    process.env.NEXT_PUBLIC_APP_URL ??
+      "https://maquette-delta-ruddy.vercel.app",
   ),
   title: "Maquette | Measure first. Move once.",
   description:
